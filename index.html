@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Assignment</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Alert on link click -->
+<h3>1. Alert on Link Click</h3>
+<a href="#" onclick="showAlert()">Click Me</a>
+
+<hr>
+
+<!-- 2. Mobile images -->
+<h3>2. Mobile Images</h3>
+<img src="https://via.placeholder.com/150?text=Mobile+1" onclick="mobileAlert()">
+<img src="https://via.placeholder.com/150?text=Mobile+2" onclick="mobileAlert()">
+<img src="https://via.placeholder.com/150?text=Mobile+3" onclick="mobileAlert()">
+
+<hr>
+
+<!-- 3. Student records -->
+<h3>3. Student Records</h3>
+<table id="studentTable">
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Ali</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>Ahmed</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>Mark</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- 4. Image mouseover -->
+<h3>4. Image Mouse Over</h3>
+<img src="https://via.placeholder.com/200?text=Image+1"
+     onmouseover="changeImage(this)"
+     onmouseout="resetImage(this)">
+
+<hr>
+
+<!-- 5. Counter -->
+<h3>5. Counter</h3>
+<h2 id="counter">0</h2>
+<button onclick="increase()">Increase</button>
+<button onclick="decrease()">Decrease</button>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
